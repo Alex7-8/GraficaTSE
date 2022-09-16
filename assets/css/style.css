@@ -474,6 +474,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
+
 }
 
 /* Sections Header
@@ -497,6 +498,9 @@ section {
 }
 
 @media (max-width: 767px) {
+  section {
+    padding: 60px 0;
+  }
   .section-header p {
     width: 100%;
   }

@@ -40,7 +40,7 @@
   ======================================================== -->
 </head>
 
-<body onload='buscar()'>
+<body onload='buscar2(0,0,1)'>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
@@ -49,22 +49,36 @@
       <h1 class="logo me-auto"><a href="index.html">TSE</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-<!--       <nav id="navbar" class="navbar order-last order-lg-0">
+    
+      <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="#about"></a></li>
+          <li>
+            <select id="Tipo" name="tp" style="border: none;">
+
+            <option>PRESIDENTE Y VICEPRESIDENTE</option>
+            
+            <option>CORPORACION MUNICIPAL</option>
+            
+          
+            
+            </select></li>
+          <li class="dropdown"><a href="#"><span>Tipo de Eleccion</span> <i class="bi bi-chevron-down"></i></a>
+          
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <li><a id ="NL" onclick="nl()">NIVEL NACIONAL</a></li>
+              <li class="dropdown"><a href="#"><span>DEPARTAMENTO(EL PROGRESO)</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a id ="GU" class="gu" onclick="gu()">GUASTATOYA</a></li>
+                  <li><a id ="MO" class="mo" onclick="mo()">MORAZÁN</a></li>
+                  <li><a id ="SAA" class="saa" onclick="saa()">SAN AGUSTÍN ACASAGUASTLÁN</a></li>
+                  <li><a id ="SCA" class="sca" onclick="sca()">SAN CRISTÓBAL ACASAGUASTLÁN</a></li>
+                  <li><a id ="EJ" class="ej" onclick="ej()">EL JÍCARO</a></li>
+                  <li><a id ="SN" class="sn" onclick="sn()">SANSARE</a></li>
+                  <li><a id ="SR" class="sr" onclick="sr()">SANARATE</a></li>
+                  <li><a id ="SP" class="sp" onclick="sp()">SAN ANTONIO LA PAZ</a></li>
+               
                 </ul>
               </li>
               <li><a href="#">Drop Down 2</a></li>
@@ -75,15 +89,24 @@
           <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav> -->
+      </nav> 
       <!-- .navbar -->
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="clearfix">
-    <div style="width: 50%;">
-      <canvas id="myChart" ></canvas>
+    <div style="display: flex;">
+      <div style="width: 70%;">
+        <canvas id="my" ></canvas>
+      </div>
+      <div style="width: 30%; margin-left: 50px;">
+        <table  id="table">
+         
+          </tbody>
+        </table>
+      </div>
     </div>
+   
   </section><!-- End Hero -->
 
 
